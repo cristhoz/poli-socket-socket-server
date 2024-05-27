@@ -11,7 +11,5 @@ public class Server {
         int port = scanner.nextInt();
 
         new ChatServer(port).execute();
-
-        scanner.close();
     }
 }

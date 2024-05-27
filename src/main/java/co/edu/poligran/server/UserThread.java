@@ -18,8 +18,7 @@ public class UserThread {
         try {
             String message;
             while((message = reader.readLine()) != null) {
-                System.out.println("Message received from client: " + message);
-                writer.println("Message received from client: " + message);
+                System.out.println(message + "\n");
             }
         } catch (IOException e) {
             System.out.println("Error in UserThread: " + e.getMessage());

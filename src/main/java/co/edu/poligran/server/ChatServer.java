@@ -17,7 +17,7 @@ public class ChatServer {
 
             while(true) {
                  Socket clientSocket = serverSocket.accept();
-                 System.out.println("New user connected");
+
                  new UserThread(clientSocket).run();
             }
         } catch (IOException e) {
